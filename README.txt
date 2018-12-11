@@ -17,7 +17,7 @@ Execution Instructions:
 
 Usage Instructions:
 
-'chatclient': 
+'ftclient': 
 1. When calling script from command line, specify the below.
 -the host name the server is running on
 -the port number the server will be listening on
@@ -25,7 +25,7 @@ Usage Instructions:
 -the filename requested (if the -g option is used)
 -the port number the server will send back the data on (working director or file).
 
-'chatserv':
+'ftserver':
 1. When calling script from command line, specify the below.
 -the port number the server will be listening on for instructions from the client
 2. To end script, enter '⌘C' (command button + 'c' button).
@@ -39,3 +39,5 @@ Bugs/TODOS:
 3. Implement username/password access to server.
 4. Allow client to change directory on the server.
 5. Transfer files additional to text files (e.g. binary files).
+6. Need to investigate and silence/address all compilation errors in 'ftserv.c' file. *Note: A lot of warnings about different data types/implicit conversions for dealing with the size of the file to be sent.*
+7. Fine tune makefile. Need clean function.
